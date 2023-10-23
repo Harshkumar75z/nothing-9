@@ -55,3 +55,38 @@ int main(){
     cin>>b;
     printOddNumbers(a,b);
 }
+
+//Write a function to count the number of digits in a number and then print the square of this number
+#include<iostream>
+using namespace std;
+int count(int n){
+    int count=0;
+    while(n>0){
+        n=n/10;
+        count++;
+    }
+    return count*count;
+}
+int main(){
+    int n;
+    cout<<"Enter n : ";
+    cin>>n;
+    cout<<count(n);
+}
+
+The minimum number of functions present in any C++ program is:
+(a)0
+(b)1
+(c)2
+(d)Infinite
+ANSWER : (b) 1 
+
+State True and False:
+(a) A function may be called more than once from any other function
+(b) It is necessary for a function to return some value.
+ANSWER : (a) True 
+(b) False
+
+Q7: Explore:
+Can the same function name be used for different functions without any conflict?
+ANSWER : Only if there are number of parameter in 2 functions are different then there is no conflict.
